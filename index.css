@@ -1,0 +1,25 @@
+header{
+    padding:20px;
+    background-color:rgba(36, 151, 151, 0.685);
+    border-radius:20px;
+}
+
+.container_1{
+    display: grid;
+    grid-template-rows: auto auto;
+    padding:10px;
+}
+
+.item_1#form{
+    text-align: right;
+}
+
+.logo{
+    width:20rem;
+    border-radius: 5px;
+}
+body{
+    background-image: url("../imagini/fundal.png");
+    display:grid;
+    grid-template-rows: 15% 70% 15%;
+}
