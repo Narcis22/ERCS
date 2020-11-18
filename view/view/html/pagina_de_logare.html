@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = ro>
+<head>
+    <title>Evidenta rezultatelor concursurilor sportive</title>
+    <meta charset="UTF-8">
+    <meta name = "Author" content = "Narcis Necula">
+    <meta name = "description" content ="Evidenta rezultatelor competitiilor sportive">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <link rel="stylesheet" type="text/css" href="../../resurse/css/index.css"/>
+</head>
+<body>
+    
+<!------------------------------------------------------------------------------>
+    <header>
+        <div class = "item_1"><img  class="logo" src = "../../resurse/imagini/logo.jpg" alt = "Baschetball-ist-logo"></div>
+    </div>
+    </header>
+<!------------------------------------------------------------------------------>
+
+
+     <main>
+        <% if(!locals.username) { %><!--trebuie sa bag js-->
+            <div class="form"><form method="post" action="/login">
+            <label>
+                Username: <input type="text" name="username" value="">
+            </label></br>
+            <label>
+                Parola: <input type="password" name="parola" value="">
+            </label>
+            <input type="submit" value="OK">   
+           </form>
+           <% } else { %>
+               Logat: <%= locals.username %>
+               <a href="/logout"> Logout</a>
+           <% } %>
+           </div>
+     </main>
+
+<!------------------------------------------------------------------------------>
+<footer>
+    <div class="footer_">
+        <p id = "text_footer">Date de Contact: </br> Telefon: </br> Email: </br></p>
+    </div>
+</footer>
+<!------------------------------------------------------------------------------>
+</body>
+</html> 
